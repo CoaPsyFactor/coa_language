@@ -1,0 +1,33 @@
+class Test
+
+    number $taxPercentage = 25
+
+    public function _startup() : void
+
+        // echo ("This should not be printed out")
+
+        sayHello(getFullName("Aleksandar", "Zivanovic"))
+
+    end
+
+    public function sayHello(string $name) : void
+
+        echo (getPercentageValue(22))
+
+        echo (concat("Hello, ", $name)
+
+    end
+
+    public function getFullName(string $firstName, string $lastName) : string
+
+        return (concat($firstName, " ", $lastName)
+
+    end
+
+    public function getPercentageValue(number $total) : number
+        return (mul(div($total, 100), $taxPercentage))
+    end
+
+
+
+end

@@ -1,0 +1,17 @@
+class Test
+	public function _startup() : void
+
+	Test_sayFullName("Coa", "Cocica")
+
+	end
+
+	public function sayFullName(string $firstName, string $lastName) : void
+	
+	string $fullName = concat($firstName, " ", $lastName)
+
+	echo ($fullName)	
+
+	debug($firstName, $lastName)
+
+	end
+end

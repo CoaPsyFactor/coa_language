@@ -1,0 +1,19 @@
+class ExampleClass
+
+    public function main()
+        print "Hello"
+    end
+
+    public function saySomething(string name) : void
+        this.printOut(this.getText())
+    end
+
+    private function getText() : string
+        return "Hello"
+    end
+
+    private function printOut(string text) : void
+        echo text
+    end
+
+end

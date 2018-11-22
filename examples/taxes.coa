@@ -1,0 +1,40 @@
+class Taxes
+
+    number $taxPercentage = 21
+
+    public function _startup() : void
+
+        number $number = 4
+
+        char $aa = 'a'
+
+        if ($number == 2 && ($aa == "b" || $aa != "2" || ($number == 3 && $aa == "a")) || $aa == "z")
+        endif
+
+        number $totalToPay = 1000
+
+        number $totalWithTaxes = sum($totalToPay, getPercentageValue($totalToPay))
+
+        number $paid = 200
+
+        echo (concat("Total to pay: ", $totalToPay))
+
+        echo (concat("With taxes: ", $totalWithTaxes)
+
+        echo (concat("Paid: ", $paid))
+
+         echo (concat("Left to pay: ", sub($totalWithTaxes, $paid)))
+
+        //echo (getPercentageValue(10000))
+
+        //echo (getPercentageValue(1000))
+
+    end
+
+    public function getPercentageValue(number $total) : number
+
+        return (mul(div($total, 100), $taxPercentage))
+
+    end
+
+end

@@ -1,0 +1,31 @@
+`<identifier>` First letter then letter, number or underscore
+
+`<text>` only letters
+
+`<value>` Identifier or literal ("Test", 1, 2.3, true)
+
+`<type>` primitive type as integer, string, boolean, float etc... or class name
+
+Class declaration
+
+`class <identifier = name> [extends <identifier = name>] [implements <identifier = name>, ... <identifier = name>]`
+
+Function declaration
+
+`<text = accessibility> function <identifier = name> ([<type> <identifier = name>...]) : <type>`
+
+Function invoke
+
+`<identifier = name>([<value>...])`
+
+Variable declaration
+
+`<type> <identifier = name> [= <value>]`
+
+Echo statement
+
+`echo <value>`
+
+Return statement
+
+`return <value>`
